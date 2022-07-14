@@ -2,10 +2,9 @@ import { useState } from "react";
 import { v4 as uuid } from "uuid";
 import styles from "./app.module.css";
 import Logo from "./assets/Logo.svg";
-import { NewTask } from "./components/NewTask";
+import { NewTask, TaskHeader, TaskList } from "./components/";
+import { Header } from "./components/Header";
 import { Task } from "./components/Task";
-import { TaskHeader } from "./components/TaskHeader";
-import { TaskList } from "./components/TaskList";
 
 function App() {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -17,7 +16,7 @@ function App() {
       isCompleted: false,
       text: newTaskText.trim(),
     };
-    
+
     setTasks([...tasks, newTask]);
   };
 
@@ -36,9 +35,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className={styles.bigBlackBox}>
-        <img src={Logo} width="126" />
-      </div>
+      <Header />
       <div className={styles.appContainer}>
         <NewTask onSubmitTask={submitTask} />
         <div className={styles.tasksContainer}>

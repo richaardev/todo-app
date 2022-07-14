@@ -1,0 +1,14 @@
+.bigBlackBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-700);
+  width: 100%;
+  /* 
+    Porque esses valores?
+      Eu quero seguir 100% o design do figma, porém a logo não está alinhada totalmente ao centro do background,
+      portanto resolvi fazer um efeito de sombra para dar a impresão de tamanho do background.
+    */
+  height: 173px;
+  box-shadow: 0 27px 0 0 var(--gray-700);
+}
