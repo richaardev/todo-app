@@ -1,10 +1,7 @@
 import { useState } from "react";
 import { v4 as uuid } from "uuid";
 import styles from "./app.module.css";
-import Logo from "./assets/Logo.svg";
-import { NewTask, TaskHeader, TaskList } from "./components/";
-import { Header } from "./components/Header";
-import { Task } from "./components/Task";
+import { NewTask, TaskHeader, TaskList, Header, Task } from "./components/";
 
 function App() {
   const [tasks, setTasks] = useState<Task[]>([]);
