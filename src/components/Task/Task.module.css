@@ -1,0 +1,88 @@
+.task,
+.taskCompleted {
+  display: flex;
+  width: 100%;
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  box-shadow: 0 0 0 1px var(--gray-400) inset;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 8px;
+  gap: 12px;
+  transition: all 0.2s linear;
+  font-size: 14px;
+}
+
+.taskCompleted {
+  box-shadow: none;
+  color: var(--gray-300);
+}
+
+.taskText {
+  color: var(--gray-100);
+  line-height: 24px;
+  flex: 1;
+}
+
+.taskCompleted .taskText {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.checkMark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkMark span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17.45px;
+  height: 17.45px;
+  border-radius: 100%;
+
+  box-shadow: 0 0 0 2px var(--blue) inset;
+  transition: all 0.2s linear;
+}
+
+.checkMark span:hover {
+  box-shadow: 0 0 0 2px var(--blue-dark) inset;
+  background-color: rgba(30, 111, 159, 0.2);
+}
+
+.taskCompleted .checkMark span:hover {
+  box-shadow: 0 0 0 2px var(--purple) inset;
+  background-color: var(--purple);
+}
+
+.checkMarkImage {
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.taskCompleted .checkMarkImage {
+  opacity: 1;
+}
+
+.taskCompleted .checkMark span {
+  background-color: var(--purple-dark);
+  box-shadow: 0 0 0 2px var(--purple-dark) inset;
+}
+
+.taskTrash {
+  transition: all 0.2s ease-in-out;
+}
+
+.taskTrash:hover {
+  background-color: var(--gray-400);
+  border-radius: 4px;
+  cursor: pointer;
+  fill: var(--danger);
+}

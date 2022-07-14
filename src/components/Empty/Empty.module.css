@@ -1,0 +1,18 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 64px 0;
+  border-top: 1px solid var(--gray-400);
+}
+.clipboardImage {
+  margin: 16px;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+.text {
+  line-height: 140%;
+}

@@ -1,0 +1,42 @@
+.newTask {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.newTaskBox {
+  padding: 16px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid var(--gray-700);
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  font-size: 16px;
+  width: 100%;
+}
+
+.newTaskBox::placeholder {
+  color: var(--gray-300);
+}
+
+.submitTask {
+  display: flex;
+  align-items: center;
+  width: 90px;
+  height: 52px;
+  gap: 8px;
+  font-weight: bold;
+  color: var(--gray-100);
+  background-color: var(--blue-dark);
+  border: none;
+  padding: 16px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.submitTask:focus,
+.submitTask:hover {
+  background-color: var(--blue);
+  cursor: pointer;
+  outline: none;
+}

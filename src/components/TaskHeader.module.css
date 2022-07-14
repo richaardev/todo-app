@@ -1,0 +1,25 @@
+
+.tasksHeader {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tasksHeader div:nth-child(1) {
+  color: var(--blue);
+}
+
+.tasksHeader div:nth-child(2) {
+  color: var(--purple);
+}
+
+.floatingIcon {
+  margin: 0 8px;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 2px 8px;
+}
